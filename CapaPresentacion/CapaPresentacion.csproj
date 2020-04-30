@@ -107,5 +107,17 @@
   <ItemGroup>
     <None Include="Resources\sisghologo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person-settings1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\room.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
