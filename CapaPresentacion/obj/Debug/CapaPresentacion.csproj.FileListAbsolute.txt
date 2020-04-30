@@ -1,0 +1,16 @@
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.formLogin.resources
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.App.resources
