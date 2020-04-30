@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.barraTitulo = new System.Windows.Forms.Panel();
-            this.panelFormularios = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnSeguridad = new System.Windows.Forms.Button();
             this.btnInformes = new System.Windows.Forms.Button();
             this.btnOrdenes = new System.Windows.Forms.Button();
@@ -42,14 +36,20 @@
             this.btnHabitaciones = new System.Windows.Forms.Button();
             this.btnHuespedes = new System.Windows.Forms.Button();
             this.btnUsuarios = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.logoApp = new System.Windows.Forms.PictureBox();
+            this.barraTitulo = new System.Windows.Forms.Panel();
+            this.btnMinApp = new System.Windows.Forms.PictureBox();
+            this.btnMaxApp = new System.Windows.Forms.PictureBox();
+            this.btnSalirApp = new System.Windows.Forms.PictureBox();
+            this.panelFormularios = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoApp)).BeginInit();
             this.barraTitulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinApp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaxApp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalirApp)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -68,65 +68,6 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(224, 592);
             this.panelMenu.TabIndex = 0;
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.Controls.Add(this.pictureBox1);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(224, 130);
-            this.panelLogo.TabIndex = 0;
-            // 
-            // barraTitulo
-            // 
-            this.barraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(31)))), ((int)(((byte)(96)))));
-            this.barraTitulo.Controls.Add(this.pictureBox4);
-            this.barraTitulo.Controls.Add(this.pictureBox3);
-            this.barraTitulo.Controls.Add(this.pictureBox2);
-            this.barraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barraTitulo.Location = new System.Drawing.Point(224, 0);
-            this.barraTitulo.Name = "barraTitulo";
-            this.barraTitulo.Size = new System.Drawing.Size(856, 86);
-            this.barraTitulo.TabIndex = 1;
-            // 
-            // panelFormularios
-            // 
-            this.panelFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFormularios.Location = new System.Drawing.Point(224, 86);
-            this.panelFormularios.Name = "panelFormularios";
-            this.panelFormularios.Size = new System.Drawing.Size(856, 506);
-            this.panelFormularios.TabIndex = 2;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::CapaPresentacion.Properties.Resources.Minimize_Icon;
-            this.pictureBox4.Location = new System.Drawing.Point(784, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::CapaPresentacion.Properties.Resources.maximize3;
-            this.pictureBox3.Location = new System.Drawing.Point(806, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::CapaPresentacion.Properties.Resources.Close_Icon;
-            this.pictureBox2.Location = new System.Drawing.Point(828, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // btnSeguridad
             // 
@@ -241,15 +182,81 @@
             this.btnUsuarios.UseVisualStyleBackColor = true;
             this.btnUsuarios.UseWaitCursor = true;
             // 
-            // pictureBox1
+            // panelLogo
             // 
-            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.sisghologo;
-            this.pictureBox1.Location = new System.Drawing.Point(65, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(89, 93);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.panelLogo.Controls.Add(this.logoApp);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(224, 130);
+            this.panelLogo.TabIndex = 0;
+            // 
+            // logoApp
+            // 
+            this.logoApp.Image = global::CapaPresentacion.Properties.Resources.sisghologo;
+            this.logoApp.Location = new System.Drawing.Point(65, 12);
+            this.logoApp.Name = "logoApp";
+            this.logoApp.Size = new System.Drawing.Size(89, 93);
+            this.logoApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.logoApp.TabIndex = 0;
+            this.logoApp.TabStop = false;
+            // 
+            // barraTitulo
+            // 
+            this.barraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(31)))), ((int)(((byte)(96)))));
+            this.barraTitulo.Controls.Add(this.btnMinApp);
+            this.barraTitulo.Controls.Add(this.btnMaxApp);
+            this.barraTitulo.Controls.Add(this.btnSalirApp);
+            this.barraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barraTitulo.Location = new System.Drawing.Point(224, 0);
+            this.barraTitulo.Name = "barraTitulo";
+            this.barraTitulo.Size = new System.Drawing.Size(856, 86);
+            this.barraTitulo.TabIndex = 1;
+            this.barraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barraTitulo_MouseDown);
+            // 
+            // btnMinApp
+            // 
+            this.btnMinApp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinApp.Image = global::CapaPresentacion.Properties.Resources.Minimize_Icon;
+            this.btnMinApp.Location = new System.Drawing.Point(784, 12);
+            this.btnMinApp.Name = "btnMinApp";
+            this.btnMinApp.Size = new System.Drawing.Size(16, 16);
+            this.btnMinApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnMinApp.TabIndex = 2;
+            this.btnMinApp.TabStop = false;
+            this.btnMinApp.Click += new System.EventHandler(this.btnMinApp_Click);
+            // 
+            // btnMaxApp
+            // 
+            this.btnMaxApp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaxApp.Image = global::CapaPresentacion.Properties.Resources.maximize3;
+            this.btnMaxApp.Location = new System.Drawing.Point(806, 12);
+            this.btnMaxApp.Name = "btnMaxApp";
+            this.btnMaxApp.Size = new System.Drawing.Size(16, 16);
+            this.btnMaxApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnMaxApp.TabIndex = 1;
+            this.btnMaxApp.TabStop = false;
+            this.btnMaxApp.Click += new System.EventHandler(this.btnMaxApp_Click);
+            // 
+            // btnSalirApp
+            // 
+            this.btnSalirApp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSalirApp.Image = global::CapaPresentacion.Properties.Resources.Close_Icon;
+            this.btnSalirApp.Location = new System.Drawing.Point(828, 12);
+            this.btnSalirApp.Name = "btnSalirApp";
+            this.btnSalirApp.Size = new System.Drawing.Size(16, 16);
+            this.btnSalirApp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnSalirApp.TabIndex = 0;
+            this.btnSalirApp.TabStop = false;
+            this.btnSalirApp.Click += new System.EventHandler(this.btnSalirApp_Click);
+            // 
+            // panelFormularios
+            // 
+            this.panelFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelFormularios.Location = new System.Drawing.Point(224, 86);
+            this.panelFormularios.Name = "panelFormularios";
+            this.panelFormularios.Size = new System.Drawing.Size(856, 506);
+            this.panelFormularios.TabIndex = 2;
             // 
             // App
             // 
@@ -259,19 +266,18 @@
             this.Controls.Add(this.panelFormularios);
             this.Controls.Add(this.barraTitulo);
             this.Controls.Add(this.panelMenu);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "App";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "App";
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoApp)).EndInit();
             this.barraTitulo.ResumeLayout(false);
             this.barraTitulo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinApp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaxApp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalirApp)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -285,13 +291,13 @@
         private System.Windows.Forms.Button btnComedor;
         private System.Windows.Forms.Button btnHabitaciones;
         private System.Windows.Forms.Button btnHuespedes;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox logoApp;
         private System.Windows.Forms.Button btnSeguridad;
         private System.Windows.Forms.Button btnInformes;
         private System.Windows.Forms.Button btnOrdenes;
         private System.Windows.Forms.Panel panelFormularios;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox btnMaxApp;
+        private System.Windows.Forms.PictureBox btnSalirApp;
+        private System.Windows.Forms.PictureBox btnMinApp;
     }
 }
