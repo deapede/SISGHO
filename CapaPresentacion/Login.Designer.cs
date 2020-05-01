@@ -35,9 +35,9 @@
             this.lineContrasena = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineCorreo = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.textContrasena = new System.Windows.Forms.TextBox();
+            this.textPass = new System.Windows.Forms.TextBox();
             this.labelBienvenido = new System.Windows.Forms.Label();
-            this.textCorreo = new System.Windows.Forms.TextBox();
+            this.textUser = new System.Windows.Forms.TextBox();
             this.btnAcceder = new System.Windows.Forms.Button();
             this.linkOlvido = new System.Windows.Forms.LinkLabel();
             this.pictureLogo = new System.Windows.Forms.PictureBox();
@@ -125,18 +125,18 @@
             this.lineShape1.Y1 = 0;
             this.lineShape1.Y2 = 23;
             // 
-            // textContrasena
+            // textPass
             // 
-            this.textContrasena.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textContrasena.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textContrasena.ForeColor = System.Drawing.Color.Gray;
-            this.textContrasena.Location = new System.Drawing.Point(46, 343);
-            this.textContrasena.Name = "textContrasena";
-            this.textContrasena.Size = new System.Drawing.Size(231, 19);
-            this.textContrasena.TabIndex = 2;
-            this.textContrasena.Text = "Contraseña";
-            this.textContrasena.Enter += new System.EventHandler(this.textContrasena_Enter);
-            this.textContrasena.Leave += new System.EventHandler(this.textContrasena_Leave);
+            this.textPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textPass.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textPass.ForeColor = System.Drawing.Color.Gray;
+            this.textPass.Location = new System.Drawing.Point(46, 343);
+            this.textPass.Name = "textPass";
+            this.textPass.Size = new System.Drawing.Size(231, 19);
+            this.textPass.TabIndex = 2;
+            this.textPass.Text = "Contraseña";
+            this.textPass.Enter += new System.EventHandler(this.textContrasena_Enter);
+            this.textPass.Leave += new System.EventHandler(this.textContrasena_Leave);
             // 
             // labelBienvenido
             // 
@@ -150,18 +150,18 @@
             this.labelBienvenido.Text = "Bienvenido";
             this.labelBienvenido.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textCorreo
+            // textUser
             // 
-            this.textCorreo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textCorreo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textCorreo.ForeColor = System.Drawing.Color.Gray;
-            this.textCorreo.Location = new System.Drawing.Point(47, 269);
-            this.textCorreo.Name = "textCorreo";
-            this.textCorreo.Size = new System.Drawing.Size(229, 19);
-            this.textCorreo.TabIndex = 1;
-            this.textCorreo.Text = "Correo";
-            this.textCorreo.Enter += new System.EventHandler(this.textCorreo_Enter);
-            this.textCorreo.Leave += new System.EventHandler(this.textCorreo_Leave);
+            this.textUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textUser.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textUser.ForeColor = System.Drawing.Color.Gray;
+            this.textUser.Location = new System.Drawing.Point(47, 269);
+            this.textUser.Name = "textUser";
+            this.textUser.Size = new System.Drawing.Size(229, 19);
+            this.textUser.TabIndex = 1;
+            this.textUser.Text = "Usuario";
+            this.textUser.Enter += new System.EventHandler(this.textCorreo_Enter);
+            this.textUser.Leave += new System.EventHandler(this.textCorreo_Leave);
             // 
             // btnAcceder
             // 
@@ -175,6 +175,7 @@
             this.btnAcceder.TabIndex = 3;
             this.btnAcceder.Text = "Acceder";
             this.btnAcceder.UseVisualStyleBackColor = false;
+            this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
             // 
             // linkOlvido
             // 
@@ -221,8 +222,8 @@
             this.Controls.Add(this.pictureLogo);
             this.Controls.Add(this.linkOlvido);
             this.Controls.Add(this.btnAcceder);
-            this.Controls.Add(this.textCorreo);
-            this.Controls.Add(this.textContrasena);
+            this.Controls.Add(this.textUser);
+            this.Controls.Add(this.textPass);
             this.Controls.Add(this.labelBienvenido);
             this.Controls.Add(this.panelBarraTitulo);
             this.Controls.Add(this.shapeContainer1);
@@ -232,6 +233,7 @@
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.formLogin_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.formLogin_MouseDown);
             this.panelBarraTitulo.ResumeLayout(false);
             this.panelBarraTitulo.PerformLayout();
@@ -252,9 +254,9 @@
         private Microsoft.VisualBasic.PowerPacks.LineShape lineContrasena;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineCorreo;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private System.Windows.Forms.TextBox textContrasena;
+        private System.Windows.Forms.TextBox textPass;
         private System.Windows.Forms.Label labelBienvenido;
-        private System.Windows.Forms.TextBox textCorreo;
+        private System.Windows.Forms.TextBox textUser;
         private System.Windows.Forms.Button btnAcceder;
         private System.Windows.Forms.LinkLabel linkOlvido;
         private System.Windows.Forms.PictureBox pictureLogo;

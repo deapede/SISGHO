@@ -8,11 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-
+using CapaNegocio;
 namespace CapaPresentacion
 {
     public partial class formLogin : Form
     {
+        LoginController lc = new LoginController();
         public formLogin()
         {
             InitializeComponent();
@@ -33,20 +34,20 @@ namespace CapaPresentacion
         //TextBox Correo
         private void textCorreo_Enter(object sender, EventArgs e)
         {
-            if(textCorreo.Text == "Correo")
+            if(textUser.Text == "Usuario")
             {
-                textCorreo.Text = "";
-                textCorreo.ForeColor = Color.LightGray;
+                textUser.Text = "";
+                textUser.ForeColor = Color.LightGray;
 
             }
         }
 
         private void textCorreo_Leave(object sender, EventArgs e)
         {
-            if (textCorreo.Text == "")
+            if (textUser.Text == "")
             {
-                textCorreo.Text = "Correo";
-                textCorreo.ForeColor = Color.DarkGray;
+                textUser.Text = "Usuario";
+                textUser.ForeColor = Color.DarkGray;
             }
         }
 
@@ -54,22 +55,22 @@ namespace CapaPresentacion
         //Textbox Contraseña
         private void textContrasena_Enter(object sender, EventArgs e)
         {
-            if (textContrasena.Text == "Contraseña")
+            if (textPass.Text == "Contraseña")
             {
-                textContrasena.Text = "";
-                textContrasena.ForeColor = Color.LightGray;
-                textContrasena.UseSystemPasswordChar = true;
+                textPass.Text = "";
+                textPass.ForeColor = Color.LightGray;
+                textPass.UseSystemPasswordChar = true;
 
             }
         }
 
         private void textContrasena_Leave(object sender, EventArgs e)
         {
-            if (textContrasena.Text == "")
+            if (textPass.Text == "")
             {
-                textContrasena.Text = "Contraseña";
-                textContrasena.ForeColor = Color.DarkGray;
-                textContrasena.UseSystemPasswordChar = false;
+                textPass.Text = "Contraseña";
+                textPass.ForeColor = Color.DarkGray;
+                textPass.UseSystemPasswordChar = false;
             }
         }
 
@@ -92,22 +93,21 @@ namespace CapaPresentacion
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+        private void btnAcceder_Click(object sender, EventArgs e)
+        {
+            App p = new App();
+            if(lc.Logear(textUser.Text, textPass.Text, p))
+            {
+                p.lblUser.Text = lc.ObtenerUsuario(textUser.Text);
+                this.Hide();
 
+            }
+        }
 
+        private void formLogin_Load(object sender, EventArgs e)
+        {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        }
     }//Fin Form
 
 }//Fin Clase

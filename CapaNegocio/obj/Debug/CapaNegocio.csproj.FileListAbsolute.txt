@@ -7,3 +7,17 @@ C:\Users\pinto\source\repos\SISGHO\CapaNegocio\obj\Debug\CapaNegocio.csproj.Core
 C:\Users\pinto\source\repos\SISGHO\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 C:\Users\pinto\source\repos\SISGHO\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\pinto\source\repos\SISGHO\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaNegocio\bin\Debug\EntityFramework.dll
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaNegocio\bin\Debug\CapaDatos.dll.config
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaNegocio\bin\Debug\EntityFramework.xml
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaNegocio\bin\Debug\CapaNegocio.dll.config
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaNegocio\bin\Debug\Oracle.ManagedDataAccess.dll

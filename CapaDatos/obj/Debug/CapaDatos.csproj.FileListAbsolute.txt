@@ -3,3 +3,14 @@ C:\Users\pinto\source\repos\SISGHO\CapaDatos\bin\Debug\CapaDatos.pdb
 C:\Users\pinto\source\repos\SISGHO\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
 C:\Users\pinto\source\repos\SISGHO\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\pinto\source\repos\SISGHO\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaDatos\bin\Debug\Oracle.ManagedDataAccess.dll

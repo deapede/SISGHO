@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="18.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ADMINISTRADOR">
+    <Key>
+      <PropertyRef Name="IDADMINISTRADOR" />
+    </Key>
+    <Property Name="IDADMINISTRADOR" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="USUARIO" Type="number" Precision="38" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CLIENTE">
+    <Key>
+      <PropertyRef Name="IDCLIENTE" />
+    </Key>
+    <Property Name="IDCLIENTE" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUT" Type="varchar2" MaxLength="12" Nullable="false" />
+    <Property Name="NOMBRE" Type="varchar2" MaxLength="50" Nullable="false" />
+    <Property Name="RUBRO" Type="varchar2" MaxLength="100" Nullable="false" />
+    <Property Name="DIRECCION" Type="varchar2" MaxLength="100" Nullable="false" />
+    <Property Name="TELEFONO" Type="number" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="USUARIO" Type="number" Precision="38" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EMPLEADO">
+    <Key>
+      <PropertyRef Name="IDEMPLEADO" />
+    </Key>
+    <Property Name="IDEMPLEADO" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="USUARIO" Type="number" Precision="38" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ESTADOHABITACION">
+    <Key>
+      <PropertyRef Name="IDESTADO" />
+    </Key>
+    <Property Name="IDESTADO" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar2" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HABITACION">
+    <Key>
+      <PropertyRef Name="IDHABITACION" />
+    </Key>
+    <Property Name="IDHABITACION" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="NUMERO" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="TIPO_CAMA" Type="varchar2" MaxLength="20" Nullable="false" />
+    <Property Name="ACCESORIOS" Type="varchar2" MaxLength="255" Nullable="false" />
+    <Property Name="PRECIO" Type="number" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="IDADMINISTRADOR" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="ESTADOHABITACION" Type="number" Precision="38" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PROVEEDOR">
+    <Key>
+      <PropertyRef Name="IDPROVEEDOR" />
+    </Key>
+    <Property Name="IDPROVEEDOR" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="RUBRO" Type="varchar2" MaxLength="100" Nullable="false" />
+    <Property Name="TELEFONO" Type="number" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar2" MaxLength="255" />
+    <Property Name="SITIOWEB" Type="varchar2" MaxLength="150" />
+    <Property Name="USUARIO" Type="number" Precision="38" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SERVICIOCOMEDOR">
+    <Key>
+      <PropertyRef Name="IDSERVICIO" />
+    </Key>
+    <Property Name="IDSERVICIO" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PLATO" Type="varchar2" MaxLength="100" Nullable="false" />
+    <Property Name="PRECIO" Type="number" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="TIPOSERVICIO" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="IDADMINISTRADOR" Type="number" Precision="38" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TIPOSERVICIO">
+    <Key>
+      <PropertyRef Name="IDTIPO" />
+    </Key>
+    <Property Name="IDTIPO" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar2" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TIPOUSUARIO">
+    <Key>
+      <PropertyRef Name="IDTIPOUSUARIO" />
+    </Key>
+    <Property Name="IDTIPOUSUARIO" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="DESCRIPCION" Type="varchar2" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="USUARIO">
+    <Key>
+      <PropertyRef Name="IDUSUARIO" />
+    </Key>
+    <Property Name="IDUSUARIO" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="TIPOUSUARIO" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="USUARIO" Type="varchar2" MaxLength="70" Nullable="false" />
+    <Property Name="CONTRASEÑA" Type="varchar2" MaxLength="255" Nullable="false" />
+    <Property Name="NOMBRE" Type="varchar2" MaxLength="100" Nullable="false" />
+    <Property Name="APELLIDO_PATERNO" Type="varchar2" MaxLength="100" Nullable="false" />
+    <Property Name="APELLIDO_MATERNO" Type="varchar2" MaxLength="100" Nullable="false" />
+    <Property Name="CORREO" Type="varchar2" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <Association Name="ADMINISTRADOR_FK">
+    <End Role="ADMINISTRADOR" Type="Self.ADMINISTRADOR" Multiplicity="1" />
+    <End Role="SERVICIOCOMEDOR" Type="Self.SERVICIOCOMEDOR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ADMINISTRADOR">
+        <PropertyRef Name="IDADMINISTRADOR" />
+      </Principal>
+      <Dependent Role="SERVICIOCOMEDOR">
+        <PropertyRef Name="IDADMINISTRADOR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ADMINISTRADOR_FKV2">
+    <End Role="ADMINISTRADOR" Type="Self.ADMINISTRADOR" Multiplicity="1" />
+    <End Role="HABITACION" Type="Self.HABITACION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ADMINISTRADOR">
+        <PropertyRef Name="IDADMINISTRADOR" />
+      </Principal>
+      <Dependent Role="HABITACION">
+        <PropertyRef Name="IDADMINISTRADOR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ADMINISTRADOR_USUARIO_FK">
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="1" />
+    <End Role="ADMINISTRADOR" Type="Self.ADMINISTRADOR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="IDUSUARIO" />
+      </Principal>
+      <Dependent Role="ADMINISTRADOR">
+        <PropertyRef Name="USUARIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CLIENTE_USUARIO_FK">
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="1" />
+    <End Role="CLIENTE" Type="Self.CLIENTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="IDUSUARIO" />
+      </Principal>
+      <Dependent Role="CLIENTE">
+        <PropertyRef Name="USUARIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EMPLEADO_USUARIO_FK">
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="1" />
+    <End Role="EMPLEADO" Type="Self.EMPLEADO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="IDUSUARIO" />
+      </Principal>
+      <Dependent Role="EMPLEADO">
+        <PropertyRef Name="USUARIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ESTADOHABITACION_FK">
+    <End Role="ESTADOHABITACION" Type="Self.ESTADOHABITACION" Multiplicity="1" />
+    <End Role="HABITACION" Type="Self.HABITACION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOHABITACION">
+        <PropertyRef Name="IDESTADO" />
+      </Principal>
+      <Dependent Role="HABITACION">
+        <PropertyRef Name="ESTADOHABITACION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PROVEEDOR_USUARIO_FK">
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="1" />
+    <End Role="PROVEEDOR" Type="Self.PROVEEDOR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="IDUSUARIO" />
+      </Principal>
+      <Dependent Role="PROVEEDOR">
+        <PropertyRef Name="USUARIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TIPOSERVICIO_FK">
+    <End Role="TIPOSERVICIO" Type="Self.TIPOSERVICIO" Multiplicity="1" />
+    <End Role="SERVICIOCOMEDOR" Type="Self.SERVICIOCOMEDOR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPOSERVICIO">
+        <PropertyRef Name="IDTIPO" />
+      </Principal>
+      <Dependent Role="SERVICIOCOMEDOR">
+        <PropertyRef Name="TIPOSERVICIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TIPOUSUARIO_FK">
+    <End Role="TIPOUSUARIO" Type="Self.TIPOUSUARIO" Multiplicity="1" />
+    <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPOUSUARIO">
+        <PropertyRef Name="IDTIPOUSUARIO" />
+      </Principal>
+      <Dependent Role="USUARIO">
+        <PropertyRef Name="TIPOUSUARIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="ADMINISTRADOR" EntityType="Self.ADMINISTRADOR" Schema="ITERACION1" store:Type="Tables" />
+    <EntitySet Name="CLIENTE" EntityType="Self.CLIENTE" Schema="ITERACION1" store:Type="Tables" />
+    <EntitySet Name="EMPLEADO" EntityType="Self.EMPLEADO" Schema="ITERACION1" store:Type="Tables" />
+    <EntitySet Name="ESTADOHABITACION" EntityType="Self.ESTADOHABITACION" Schema="ITERACION1" store:Type="Tables" />
+    <EntitySet Name="HABITACION" EntityType="Self.HABITACION" Schema="ITERACION1" store:Type="Tables" />
+    <EntitySet Name="PROVEEDOR" EntityType="Self.PROVEEDOR" Schema="ITERACION1" store:Type="Tables" />
+    <EntitySet Name="SERVICIOCOMEDOR" EntityType="Self.SERVICIOCOMEDOR" Schema="ITERACION1" store:Type="Tables" />
+    <EntitySet Name="TIPOSERVICIO" EntityType="Self.TIPOSERVICIO" Schema="ITERACION1" store:Type="Tables" />
+    <EntitySet Name="TIPOUSUARIO" EntityType="Self.TIPOUSUARIO" Schema="ITERACION1" store:Type="Tables" />
+    <EntitySet Name="USUARIO" EntityType="Self.USUARIO" Schema="ITERACION1" store:Type="Tables" />
+    <AssociationSet Name="ADMINISTRADOR_FK" Association="Self.ADMINISTRADOR_FK">
+      <End Role="ADMINISTRADOR" EntitySet="ADMINISTRADOR" />
+      <End Role="SERVICIOCOMEDOR" EntitySet="SERVICIOCOMEDOR" />
+    </AssociationSet>
+    <AssociationSet Name="ADMINISTRADOR_FKV2" Association="Self.ADMINISTRADOR_FKV2">
+      <End Role="ADMINISTRADOR" EntitySet="ADMINISTRADOR" />
+      <End Role="HABITACION" EntitySet="HABITACION" />
+    </AssociationSet>
+    <AssociationSet Name="ADMINISTRADOR_USUARIO_FK" Association="Self.ADMINISTRADOR_USUARIO_FK">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="ADMINISTRADOR" EntitySet="ADMINISTRADOR" />
+    </AssociationSet>
+    <AssociationSet Name="CLIENTE_USUARIO_FK" Association="Self.CLIENTE_USUARIO_FK">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="CLIENTE" EntitySet="CLIENTE" />
+    </AssociationSet>
+    <AssociationSet Name="EMPLEADO_USUARIO_FK" Association="Self.EMPLEADO_USUARIO_FK">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="EMPLEADO" EntitySet="EMPLEADO" />
+    </AssociationSet>
+    <AssociationSet Name="ESTADOHABITACION_FK" Association="Self.ESTADOHABITACION_FK">
+      <End Role="ESTADOHABITACION" EntitySet="ESTADOHABITACION" />
+      <End Role="HABITACION" EntitySet="HABITACION" />
+    </AssociationSet>
+    <AssociationSet Name="PROVEEDOR_USUARIO_FK" Association="Self.PROVEEDOR_USUARIO_FK">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="PROVEEDOR" EntitySet="PROVEEDOR" />
+    </AssociationSet>
+    <AssociationSet Name="TIPOSERVICIO_FK" Association="Self.TIPOSERVICIO_FK">
+      <End Role="TIPOSERVICIO" EntitySet="TIPOSERVICIO" />
+      <End Role="SERVICIOCOMEDOR" EntitySet="SERVICIOCOMEDOR" />
+    </AssociationSet>
+    <AssociationSet Name="TIPOUSUARIO_FK" Association="Self.TIPOUSUARIO_FK">
+      <End Role="TIPOUSUARIO" EntitySet="TIPOUSUARIO" />
+      <End Role="USUARIO" EntitySet="USUARIO" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

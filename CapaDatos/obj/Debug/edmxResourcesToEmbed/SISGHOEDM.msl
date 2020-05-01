@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="SisghoEntities">
+    <EntitySetMapping Name="ADMINISTRADOR">
+      <EntityTypeMapping TypeName="Model.ADMINISTRADOR">
+        <MappingFragment StoreEntitySet="ADMINISTRADOR">
+          <ScalarProperty Name="IDADMINISTRADOR" ColumnName="IDADMINISTRADOR" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTE">
+      <EntityTypeMapping TypeName="Model.CLIENTE">
+        <MappingFragment StoreEntitySet="CLIENTE">
+          <ScalarProperty Name="IDCLIENTE" ColumnName="IDCLIENTE" />
+          <ScalarProperty Name="RUT" ColumnName="RUT" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="RUBRO" ColumnName="RUBRO" />
+          <ScalarProperty Name="DIRECCION" ColumnName="DIRECCION" />
+          <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPLEADO">
+      <EntityTypeMapping TypeName="Model.EMPLEADO">
+        <MappingFragment StoreEntitySet="EMPLEADO">
+          <ScalarProperty Name="IDEMPLEADO" ColumnName="IDEMPLEADO" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESTADOHABITACION">
+      <EntityTypeMapping TypeName="Model.ESTADOHABITACION">
+        <MappingFragment StoreEntitySet="ESTADOHABITACION">
+          <ScalarProperty Name="IDESTADO" ColumnName="IDESTADO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HABITACION">
+      <EntityTypeMapping TypeName="Model.HABITACION">
+        <MappingFragment StoreEntitySet="HABITACION">
+          <ScalarProperty Name="IDHABITACION" ColumnName="IDHABITACION" />
+          <ScalarProperty Name="NUMERO" ColumnName="NUMERO" />
+          <ScalarProperty Name="TIPO_CAMA" ColumnName="TIPO_CAMA" />
+          <ScalarProperty Name="ACCESORIOS" ColumnName="ACCESORIOS" />
+          <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+          <ScalarProperty Name="IDADMINISTRADOR" ColumnName="IDADMINISTRADOR" />
+          <ScalarProperty Name="ESTADOHABITACION" ColumnName="ESTADOHABITACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PROVEEDOR">
+      <EntityTypeMapping TypeName="Model.PROVEEDOR">
+        <MappingFragment StoreEntitySet="PROVEEDOR">
+          <ScalarProperty Name="IDPROVEEDOR" ColumnName="IDPROVEEDOR" />
+          <ScalarProperty Name="RUBRO" ColumnName="RUBRO" />
+          <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="SITIOWEB" ColumnName="SITIOWEB" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SERVICIOCOMEDOR">
+      <EntityTypeMapping TypeName="Model.SERVICIOCOMEDOR">
+        <MappingFragment StoreEntitySet="SERVICIOCOMEDOR">
+          <ScalarProperty Name="IDSERVICIO" ColumnName="IDSERVICIO" />
+          <ScalarProperty Name="PLATO" ColumnName="PLATO" />
+          <ScalarProperty Name="PRECIO" ColumnName="PRECIO" />
+          <ScalarProperty Name="TIPOSERVICIO" ColumnName="TIPOSERVICIO" />
+          <ScalarProperty Name="IDADMINISTRADOR" ColumnName="IDADMINISTRADOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPOSERVICIO">
+      <EntityTypeMapping TypeName="Model.TIPOSERVICIO">
+        <MappingFragment StoreEntitySet="TIPOSERVICIO">
+          <ScalarProperty Name="IDTIPO" ColumnName="IDTIPO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPOUSUARIO">
+      <EntityTypeMapping TypeName="Model.TIPOUSUARIO">
+        <MappingFragment StoreEntitySet="TIPOUSUARIO">
+          <ScalarProperty Name="IDTIPOUSUARIO" ColumnName="IDTIPOUSUARIO" />
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIO">
+      <EntityTypeMapping TypeName="Model.USUARIO">
+        <MappingFragment StoreEntitySet="USUARIO">
+          <ScalarProperty Name="IDUSUARIO" ColumnName="IDUSUARIO" />
+          <ScalarProperty Name="TIPOUSUARIO" ColumnName="TIPOUSUARIO" />
+          <ScalarProperty Name="USUARIO1" ColumnName="USUARIO" />
+          <ScalarProperty Name="CONTRASEÑA" ColumnName="CONTRASEÑA" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="APELLIDO_PATERNO" ColumnName="APELLIDO_PATERNO" />
+          <ScalarProperty Name="APELLIDO_MATERNO" ColumnName="APELLIDO_MATERNO" />
+          <ScalarProperty Name="CORREO" ColumnName="CORREO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-
+using CapaNegocio;
 namespace CapaPresentacion
 {
     public partial class App : Form
     {
+        AppController ac = new AppController();
+        public static Modulos.Cliente.FormularioCliente fc = new Modulos.Cliente.FormularioCliente();
         public App()
         {
             InitializeComponent();
@@ -55,6 +57,11 @@ namespace CapaPresentacion
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            ac.AbrirFormulario(fc, panelFormularios);
         }
     }//Fin clase
 }//FIn namespace

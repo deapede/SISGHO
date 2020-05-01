@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CapaDatos</RootNamespace>
     <AssemblyName>CapaDatos</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,8 +32,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.19.7.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,7 +52,84 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractService.cs" />
+    <Compile Include="ADMINISTRADOR.cs">
+      <DependentUpon>SISGHOEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CLIENTE.cs">
+      <DependentUpon>SISGHOEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLEADO.cs">
+      <DependentUpon>SISGHOEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ESTADOHABITACION.cs">
+      <DependentUpon>SISGHOEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HABITACION.cs">
+      <DependentUpon>SISGHOEDM.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PROVEEDOR.cs">
+      <DependentUpon>SISGHOEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceCliente.cs" />
+    <Compile Include="ServiceTipoUsuario.cs" />
+    <Compile Include="ServiceUsuario.cs" />
+    <Compile Include="SERVICIOCOMEDOR.cs">
+      <DependentUpon>SISGHOEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISGHOEDM.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SISGHOEDM.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISGHOEDM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SISGHOEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SISGHOEDM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SISGHOEDM.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="TIPOSERVICIO.cs">
+      <DependentUpon>SISGHOEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TIPOUSUARIO.cs">
+      <DependentUpon>SISGHOEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIO.cs">
+      <DependentUpon>SISGHOEDM.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="SISGHOEDM.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SISGHOEDM.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="SISGHOEDM.edmx.diagram">
+      <DependentUpon>SISGHOEDM.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SISGHOEDM.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SISGHOEDM.Context.cs</LastGenOutput>
+      <DependentUpon>SISGHOEDM.edmx</DependentUpon>
+    </Content>
+    <Content Include="SISGHOEDM.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SISGHOEDM.edmx</DependentUpon>
+      <LastGenOutput>SISGHOEDM.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
