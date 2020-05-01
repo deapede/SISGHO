@@ -39,3 +39,28 @@ C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaPresentacion\bin\De
 C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Cliente.FormularioCliente.resources
 C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.AgregarCliente.resources
 C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Cliente.ModificarCliente.resources
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\bin\Debug\CapaNegocio.dll
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\bin\Debug\CapaDatos.dll
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\bin\Debug\EntityFramework.dll
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\bin\Debug\CapaNegocio.dll.config
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\bin\Debug\CapaDatos.pdb
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\bin\Debug\CapaDatos.dll.config
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\bin\Debug\EntityFramework.xml
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.App.resources
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.formLogin.resources
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.AgregarCliente.resources
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Cliente.FormularioCliente.resources
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Cliente.ModificarCliente.resources
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.pdb

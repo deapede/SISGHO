@@ -48,17 +48,17 @@ namespace CapaPresentacion.Modulos
                                                 {
                                                     if (!String.IsNullOrEmpty(txtTelefono.Text))
                                                     {
-                                                      //  try
-                                                      //      {
+                                                      try
+                                                            {
                                                              ClienteController cc = new ClienteController();
                                                              cc.AgregarCliente(txtUsuario.Text, txtContraseña.Text, txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, txtCorreo.Text, txtRut.Text, txtNombreE.Text, txtRubro.Text, txtDireccion.Text, int.Parse(txtTelefono.Text));
                                                              cc.LlenarGrid(App.fc.dataClientes);
                                                              this.Dispose();
-                                                        //    }
-                                                       // catch(Exception ex)
-                                                      //  {
-                                                      //      MessageBox.Show("Debe ingresar un numero de telefono valido.", "Crear Usuario", MessageBoxButtons.OK);
-                                                       // }
+                                                           }
+                                                        catch(Exception ex)
+                                                        {
+                                                            MessageBox.Show("Debe ingresar un numero de telefono valido.", "Crear Usuario", MessageBoxButtons.OK);
+                                                        }
                                                     }
                                                     else
                                                     {
