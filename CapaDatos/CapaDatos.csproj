@@ -73,6 +73,7 @@
       <DependentUpon>SISGHOEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="ServiceCliente.cs" />
+    <Compile Include="ServiceEmpleado.cs" />
     <Compile Include="ServiceTipoUsuario.cs" />
     <Compile Include="ServiceUsuario.cs" />
     <Compile Include="SERVICIOCOMEDOR.cs">

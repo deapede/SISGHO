@@ -21,3 +21,8 @@ C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaNegocio\bin\Debug\C
 C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaNegocio\bin\Debug\EntityFramework.xml
 C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaNegocio\bin\Debug\CapaNegocio.dll.config
 C:\Users\Programar\Downloads\SISGHO-master\SISGHO-master\CapaNegocio\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\pinto\source\repos\SISGHO\CapaNegocio\bin\Debug\CapaNegocio.dll.config
+C:\Users\pinto\source\repos\SISGHO\CapaNegocio\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\pinto\source\repos\SISGHO\CapaNegocio\bin\Debug\EntityFramework.dll
+C:\Users\pinto\source\repos\SISGHO\CapaNegocio\bin\Debug\CapaDatos.dll.config
+C:\Users\pinto\source\repos\SISGHO\CapaNegocio\bin\Debug\EntityFramework.xml

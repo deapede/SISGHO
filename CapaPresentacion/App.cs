@@ -15,17 +15,23 @@ namespace CapaPresentacion
     {
         AppController ac = new AppController();
         public static Modulos.Cliente.FormularioCliente fc = new Modulos.Cliente.FormularioCliente();
+        public static Modulos.Empleado.FormularioEmpleado fe = new Modulos.Empleado.FormularioEmpleado();
         public App()
         {
             InitializeComponent();
             this.Text = string.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
-
+            
             //Ajuste minimo
             this.MinimumSize = new Size(500, 500);
         }
 
+        private void App_Load(object sender, EventArgs e)
+        {
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            this.WindowState = FormWindowState.Normal;
+        }
 
         //Botones ventana
         private void btnSalirApp_Click(object sender, EventArgs e)
@@ -35,9 +41,12 @@ namespace CapaPresentacion
 
         private void btnMaxApp_Click(object sender, EventArgs e)
         {
-            if (WindowState == FormWindowState.Normal)
-                WindowState = FormWindowState.Maximized;
-            else
+            if (this.WindowState == FormWindowState.Normal)
+                
+                this.WindowState = FormWindowState.Maximized;      
+            
+            else if(this.WindowState==FormWindowState.Maximized)
+                
                 WindowState = FormWindowState.Normal;
         }
 
@@ -63,5 +72,12 @@ namespace CapaPresentacion
         {
             ac.AbrirFormulario(fc, panelFormularios);
         }
+
+        private void btnEmpleado_Click(object sender, EventArgs e)
+        {
+            ac.AbrirFormulario(fe, panelFormularios);
+        }
+
+        
     }//Fin clase
 }//FIn namespace

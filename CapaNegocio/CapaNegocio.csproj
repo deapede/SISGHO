@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="AppController.cs" />
     <Compile Include="ClienteController.cs" />
+    <Compile Include="EmpleadoController.cs" />
     <Compile Include="LoginController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

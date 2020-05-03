@@ -83,6 +83,12 @@
     <Compile Include="Modulos\Cliente\ModificarCliente.Designer.cs">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\Empleado\FormularioEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Empleado\FormularioEmpleado.Designer.cs">
+      <DependentUpon>FormularioEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="App.resx">
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\Cliente\ModificarCliente.resx">
       <DependentUpon>ModificarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Empleado\FormularioEmpleado.resx">
+      <DependentUpon>FormularioEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -168,6 +177,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\seguridad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modulos\Comedor\" />
+    <Folder Include="Modulos\Habitacion\" />
+    <Folder Include="Modulos\Informes\" />
+    <Folder Include="Modulos\Proveedor\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

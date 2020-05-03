@@ -64,3 +64,14 @@ E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacio
 E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
 E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 E:\Portafolio\I.T 1\sisgho app\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\bin\Debug\EntityFramework.dll
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\bin\Debug\CapaNegocio.dll.config
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\bin\Debug\CapaDatos.dll.config
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\bin\Debug\EntityFramework.xml
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.AgregarCliente.resources
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Cliente.FormularioCliente.resources
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Cliente.ModificarCliente.resources
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Empleado.FormularioEmpleado.resources
