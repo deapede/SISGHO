@@ -60,6 +60,7 @@
             this.btnEliminarEmp.TabIndex = 6;
             this.btnEliminarEmp.Text = "Eliminar Empleado";
             this.btnEliminarEmp.UseVisualStyleBackColor = true;
+            this.btnEliminarEmp.Click += new System.EventHandler(this.btnEliminarEmp_Click);
             // 
             // btnModificarEmp
             // 
@@ -136,7 +137,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataEmpleado;
+        public System.Windows.Forms.DataGridView dataEmpleado;
         private System.Windows.Forms.Button btnEliminarEmp;
         private System.Windows.Forms.Button btnModificarEmp;
         private System.Windows.Forms.Button btnAgregarEmp;

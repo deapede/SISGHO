@@ -107,11 +107,11 @@
     <Compile Include="Modulos\Proveedor\AgregarProveedor.Designer.cs">
       <DependentUpon>AgregarProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modulos\Proveedor\EditarProveedor.cs">
+    <Compile Include="Modulos\Proveedor\ModificarProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modulos\Proveedor\EditarProveedor.Designer.cs">
-      <DependentUpon>EditarProveedor.cs</DependentUpon>
+    <Compile Include="Modulos\Proveedor\ModificarProveedor.Designer.cs">
+      <DependentUpon>ModificarProveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulos\Proveedor\FormularioProveedor.cs">
       <SubType>Form</SubType>
@@ -148,8 +148,8 @@
     <EmbeddedResource Include="Modulos\Proveedor\AgregarProveedor.resx">
       <DependentUpon>AgregarProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modulos\Proveedor\EditarProveedor.resx">
-      <DependentUpon>EditarProveedor.cs</DependentUpon>
+    <EmbeddedResource Include="Modulos\Proveedor\ModificarProveedor.resx">
+      <DependentUpon>ModificarProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\Proveedor\FormularioProveedor.resx">
       <DependentUpon>FormularioProveedor.cs</DependentUpon>

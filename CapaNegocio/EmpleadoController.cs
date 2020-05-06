@@ -61,7 +61,7 @@ namespace CapaNegocio
 
 
 
-        public void AgregarEmpleado(string usuario, string nombre, string apellidop, string apellidom, string correo, string contraseña)
+        public void AgregarEmpleado(string usuario, string contraseña, string nombre, string apellidop, string apellidom, string correo)
         {
             ServiceEmpleado sc = new ServiceEmpleado();
             ServiceUsuario su = new ServiceUsuario();
@@ -72,7 +72,6 @@ namespace CapaNegocio
                 user.TIPOUSUARIO = 2;
                 user.USUARIO1 = usuario;
                 user.CONTRASEÑA = contraseña;
-                user.NOMBRE = nombre;
                 user.NOMBRE = nombre;
                 user.APELLIDO_PATERNO = apellidop;
                 user.APELLIDO_MATERNO = apellidom;
@@ -107,6 +106,54 @@ namespace CapaNegocio
             }
         }
 
+        public void ModificarEmpleado(string usuario, string contraseña, string nombre, string apellidop,string apellidom, string correo)
+        {
+            ServiceEmpleado se = new ServiceEmpleado();
+            ServiceUsuario su = new ServiceUsuario();
+            //Crear usuario
+            USUARIO user = new USUARIO();
+            user.IDUSUARIO = su.id();
+            user.TIPOUSUARIO = 2;
+            user.USUARIO1 = usuario;
+            user.CONTRASEÑA = contraseña;
+            user.NOMBRE = nombre;
+            user.APELLIDO_PATERNO = apellidop;
+            user.APELLIDO_MATERNO = apellidom;
+            user.CORREO = correo;
+            su.updEntity(user);
 
+            EMPLEADO empleado = new EMPLEADO();
+            empleado.IDEMPLEADO = su.id();
+            empleado.USUARIO = su.getEntity(usuario).IDUSUARIO;
+            se.addEntity(empleado);
+            MessageBox.Show("Empleado Modificado", "Modificar Empleado", MessageBoxButtons.OK);
+        }
+
+        public void LlenarCamposEmp(int idEmpleado, TextBox usuario, TextBox contraseña, TextBox nombre, TextBox apellidop, TextBox apellidom, TextBox correo)
+        {
+            ServiceEmpleado se = new ServiceEmpleado();
+            ServiceUsuario su = new ServiceUsuario();
+
+            EMPLEADO empleado = se.getEntity(idEmpleado);
+            USUARIO user = su.getEntity(empleado.USUARIO1.USUARIO1);
+
+            usuario.Text = user.USUARIO1.ToString();
+            contraseña.Text = user.CONTRASEÑA;
+            nombre.Text = user.NOMBRE;
+            apellidop.Text = user.APELLIDO_PATERNO;
+            apellidom.Text = user.APELLIDO_MATERNO;
+            correo.Text = user.CORREO;
+        }
+
+        public void EliminarEmpleado(int id)
+        {
+            ServiceUsuario su = new ServiceUsuario();
+            ServiceEmpleado se = new ServiceEmpleado();
+
+            EMPLEADO emp = se.getEntity(id);
+            USUARIO user = su.getEntity(emp.USUARIO1.USUARIO1);
+            se.delEntity(emp.IDEMPLEADO);
+            su.delEntity(user.USUARIO1);
+        }
     }
 }

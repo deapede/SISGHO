@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion.Modulos.Proveedor
 {
-    public partial class EditarProveedor : Form
+    public partial class ModificarProveedor : Form
     {
-        public EditarProveedor()
+        public ModificarProveedor()
         {
             InitializeComponent();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

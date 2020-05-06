@@ -78,3 +78,5 @@ C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.M
 C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Empleado.AgregarEmpleado.resources
 C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Empleado.ModificarEmpleado.resources
 C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Proveedor.FormularioProveedor.resources
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Proveedor.AgregarProveedor.resources
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Proveedor.ModificarProveedor.resources

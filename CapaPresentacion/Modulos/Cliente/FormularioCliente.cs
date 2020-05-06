@@ -34,12 +34,15 @@ namespace CapaPresentacion.Modulos.Cliente
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-
+            
+                
             ClienteController cc = new ClienteController();
             int id = int.Parse(dataClientes.CurrentRow.Cells[0].Value.ToString());
             ModificarCliente mc = new ModificarCliente();
-            cc.LlenarCampos(id, mc.txtUsuario,mc.txtContraseña,mc.txtNombre,mc.txtApellidoP,mc.txtApellidoM,mc.txtCorreo,mc.txtRut,mc.txtNombreE,mc.txtRubro,mc.txtDireccion,mc.txtTelefono, mc.id);
+            cc.LlenarCampos(id, mc.txtUsuario, mc.txtContraseña, mc.txtNombre, mc.txtApellidoP, mc.txtApellidoM, mc.txtCorreo, mc.txtRut, mc.txtNombreE, mc.txtRubro, mc.txtDireccion, mc.txtTelefono, mc.id);
             mc.Show();
+            
+            
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

@@ -16,5 +16,17 @@ namespace CapaPresentacion.Modulos.Proveedor
         {
             InitializeComponent();
         }
+
+        private void btnAgregarProv_Click(object sender, EventArgs e)
+        {
+            AgregarProveedor ap = new AgregarProveedor();
+            ap.Show();
+        }
+
+        private void btnModificarProv_Click(object sender, EventArgs e)
+        {
+            ModificarProveedor mp = new ModificarProveedor();
+            mp.Show();
+        }
     }
 }

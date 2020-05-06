@@ -85,6 +85,7 @@
             this.btnModificarProv.TabIndex = 13;
             this.btnModificarProv.Text = "Modificar Proveedor";
             this.btnModificarProv.UseVisualStyleBackColor = true;
+            this.btnModificarProv.Click += new System.EventHandler(this.btnModificarProv_Click);
             // 
             // btnAgregarProv
             // 
@@ -98,6 +99,7 @@
             this.btnAgregarProv.TabIndex = 12;
             this.btnAgregarProv.Text = "Agregar Proveedor";
             this.btnAgregarProv.UseVisualStyleBackColor = true;
+            this.btnAgregarProv.Click += new System.EventHandler(this.btnAgregarProv_Click);
             // 
             // dataEmpleado
             // 

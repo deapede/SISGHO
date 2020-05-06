@@ -36,8 +36,16 @@ namespace CapaPresentacion.Modulos.Empleado
             EmpleadoController ec = new EmpleadoController();
             int id = int.Parse(dataEmpleado.CurrentRow.Cells[0].Value.ToString());
             ModificarEmpleado me = new ModificarEmpleado();
-            //ec.LlenarCamposEmp
+            ec.LlenarCamposEmp(id, me.txtUsuario, me.txtContraseña, me.txtNombre, me.txtApellidoP, me.txtApellidoM, me.txtCorreo);
             me.Show();
+        }
+
+        private void btnEliminarEmp_Click(object sender, EventArgs e)
+        {
+            EmpleadoController ec = new EmpleadoController();
+            int id = int.Parse(dataEmpleado.CurrentRow.Cells[0].Value.ToString());
+            ec.EliminarEmpleado(id);
+            ec.LlenarGridEmp(App.fe.dataEmpleado);
         }
     }
 }
