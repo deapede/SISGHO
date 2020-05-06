@@ -30,13 +30,15 @@
         {
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnInformes = new System.Windows.Forms.Button();
-            this.btnOrdenes = new System.Windows.Forms.Button();
+            this.btnProveedor = new System.Windows.Forms.Button();
             this.btnComedor = new System.Windows.Forms.Button();
             this.btnHabitaciones = new System.Windows.Forms.Button();
             this.btnEmpleado = new System.Windows.Forms.Button();
             this.btnCliente = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.logoApp = new System.Windows.Forms.PictureBox();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.Separador = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.barraTitulo = new System.Windows.Forms.Panel();
             this.lblUser = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,8 +46,6 @@
             this.btnMaxApp = new System.Windows.Forms.PictureBox();
             this.btnSalirApp = new System.Windows.Forms.PictureBox();
             this.panelFormularios = new System.Windows.Forms.Panel();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.Separador = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoApp)).BeginInit();
@@ -59,7 +59,7 @@
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(31)))), ((int)(((byte)(96)))));
             this.panelMenu.Controls.Add(this.btnInformes);
-            this.panelMenu.Controls.Add(this.btnOrdenes);
+            this.panelMenu.Controls.Add(this.btnProveedor);
             this.panelMenu.Controls.Add(this.btnComedor);
             this.panelMenu.Controls.Add(this.btnHabitaciones);
             this.panelMenu.Controls.Add(this.btnEmpleado);
@@ -87,21 +87,22 @@
             this.btnInformes.Text = "Informes";
             this.btnInformes.UseVisualStyleBackColor = true;
             // 
-            // btnOrdenes
+            // btnProveedor
             // 
-            this.btnOrdenes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnOrdenes.FlatAppearance.BorderSize = 0;
-            this.btnOrdenes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOrdenes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrdenes.ForeColor = System.Drawing.Color.White;
-            this.btnOrdenes.Image = global::CapaPresentacion.Properties.Resources.factura;
-            this.btnOrdenes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrdenes.Location = new System.Drawing.Point(0, 330);
-            this.btnOrdenes.Name = "btnOrdenes";
-            this.btnOrdenes.Size = new System.Drawing.Size(224, 50);
-            this.btnOrdenes.TabIndex = 5;
-            this.btnOrdenes.Text = "Proveedor";
-            this.btnOrdenes.UseVisualStyleBackColor = true;
+            this.btnProveedor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProveedor.FlatAppearance.BorderSize = 0;
+            this.btnProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProveedor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProveedor.ForeColor = System.Drawing.Color.White;
+            this.btnProveedor.Image = global::CapaPresentacion.Properties.Resources.factura;
+            this.btnProveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProveedor.Location = new System.Drawing.Point(0, 330);
+            this.btnProveedor.Name = "btnProveedor";
+            this.btnProveedor.Size = new System.Drawing.Size(224, 50);
+            this.btnProveedor.TabIndex = 5;
+            this.btnProveedor.Text = "Proveedor";
+            this.btnProveedor.UseVisualStyleBackColor = true;
+            this.btnProveedor.Click += new System.EventHandler(this.btnProveedor_Click);
             // 
             // btnComedor
             // 
@@ -189,6 +190,26 @@
             this.logoApp.TabIndex = 0;
             this.logoApp.TabStop = false;
             // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.Separador});
+            this.shapeContainer1.Size = new System.Drawing.Size(224, 130);
+            this.shapeContainer1.TabIndex = 1;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // Separador
+            // 
+            this.Separador.BorderColor = System.Drawing.Color.White;
+            this.Separador.Name = "Separador";
+            this.Separador.X1 = 16;
+            this.Separador.X2 = 210;
+            this.Separador.Y1 = 119;
+            this.Separador.Y2 = 119;
+            // 
             // barraTitulo
             // 
             this.barraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(31)))), ((int)(((byte)(96)))));
@@ -273,26 +294,6 @@
             this.panelFormularios.Size = new System.Drawing.Size(856, 506);
             this.panelFormularios.TabIndex = 2;
             // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.Separador});
-            this.shapeContainer1.Size = new System.Drawing.Size(224, 130);
-            this.shapeContainer1.TabIndex = 1;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // Separador
-            // 
-            this.Separador.BorderColor = System.Drawing.Color.White;
-            this.Separador.Name = "Separador";
-            this.Separador.X1 = 16;
-            this.Separador.X2 = 210;
-            this.Separador.Y1 = 119;
-            this.Separador.Y2 = 119;
-            // 
             // App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -329,7 +330,7 @@
         private System.Windows.Forms.Button btnEmpleado;
         private System.Windows.Forms.PictureBox logoApp;
         private System.Windows.Forms.Button btnInformes;
-        private System.Windows.Forms.Button btnOrdenes;
+        private System.Windows.Forms.Button btnProveedor;
         private System.Windows.Forms.Panel panelFormularios;
         private System.Windows.Forms.PictureBox btnMaxApp;
         private System.Windows.Forms.PictureBox btnSalirApp;

@@ -27,7 +27,17 @@ namespace CapaPresentacion.Modulos.Empleado
 
         private void btnAgregarEmp_Click(object sender, EventArgs e)
         {
-            
+            AgregarEmpleado ae = new AgregarEmpleado();
+            ae.Show();
+        }
+
+        private void btnModificarEmp_Click(object sender, EventArgs e)
+        {
+            EmpleadoController ec = new EmpleadoController();
+            int id = int.Parse(dataEmpleado.CurrentRow.Cells[0].Value.ToString());
+            ModificarEmpleado me = new ModificarEmpleado();
+            //ec.LlenarCamposEmp
+            me.Show();
         }
     }
 }

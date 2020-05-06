@@ -73,6 +73,7 @@
             this.btnModificarEmp.TabIndex = 5;
             this.btnModificarEmp.Text = "Modificar Empleado";
             this.btnModificarEmp.UseVisualStyleBackColor = true;
+            this.btnModificarEmp.Click += new System.EventHandler(this.btnModificarEmp_Click);
             // 
             // btnAgregarEmp
             // 
@@ -125,7 +126,7 @@
             this.Controls.Add(this.dataEmpleado);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormularioEmpleado";
-            this.Text = "FormularioEmpleado";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.FormularioEmpleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataEmpleado)).EndInit();
             this.ResumeLayout(false);

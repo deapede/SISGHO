@@ -16,6 +16,7 @@ namespace CapaPresentacion
         AppController ac = new AppController();
         public static Modulos.Cliente.FormularioCliente fc = new Modulos.Cliente.FormularioCliente();
         public static Modulos.Empleado.FormularioEmpleado fe = new Modulos.Empleado.FormularioEmpleado();
+        public static Modulos.Proveedor.FormularioProveedor fp = new Modulos.Proveedor.FormularioProveedor();
         public App()
         {
             InitializeComponent();
@@ -78,6 +79,9 @@ namespace CapaPresentacion
             ac.AbrirFormulario(fe, panelFormularios);
         }
 
-        
+        private void btnProveedor_Click(object sender, EventArgs e)
+        {
+            ac.AbrirFormulario(fp, panelFormularios);
+        }
     }//Fin clase
 }//FIn namespace
