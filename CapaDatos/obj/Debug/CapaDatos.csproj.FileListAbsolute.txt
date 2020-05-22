@@ -20,3 +20,25 @@ C:\Users\pinto\source\repos\SISGHO\CapaDatos\bin\Debug\Oracle.ManagedDataAccess.
 C:\Users\pinto\source\repos\SISGHO\CapaDatos\bin\Debug\EntityFramework.xml
 C:\Users\pinto\source\repos\SISGHO\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
 C:\Users\pinto\source\repos\SISGHO\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+E:\Portafolio\I.T 1\app final\SISGHO\CapaDatos\bin\Debug\CapaDatos.dll.config
+E:\Portafolio\I.T 1\app final\SISGHO\CapaDatos\bin\Debug\CapaDatos.dll
+E:\Portafolio\I.T 1\app final\SISGHO\CapaDatos\bin\Debug\CapaDatos.pdb
+E:\Portafolio\I.T 1\app final\SISGHO\CapaDatos\bin\Debug\EntityFramework.dll
+E:\Portafolio\I.T 1\app final\SISGHO\CapaDatos\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\Portafolio\I.T 1\app final\SISGHO\CapaDatos\bin\Debug\EntityFramework.xml
+E:\Portafolio\I.T 1\app final\SISGHO\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+E:\Portafolio\I.T 1\app final\SISGHO\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+E:\Portafolio\I.T 1\app final\SISGHO\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+E:\Portafolio\I.T 1\app final\SISGHO\CapaDatos\obj\Debug\CapaDatos.dll
+E:\Portafolio\I.T 1\app final\SISGHO\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaDatos\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaDatos\obj\Debug\CapaDatos.pdb

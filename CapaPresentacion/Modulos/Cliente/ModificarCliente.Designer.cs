@@ -37,7 +37,6 @@
             this.txtApellidoM = new System.Windows.Forms.TextBox();
             this.txtApellidoP = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
@@ -48,7 +47,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -107,39 +105,31 @@
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(29, 325);
+            this.txtCorreo.Location = new System.Drawing.Point(29, 276);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(129, 20);
             this.txtCorreo.TabIndex = 48;
             // 
             // txtApellidoM
             // 
-            this.txtApellidoM.Location = new System.Drawing.Point(29, 275);
+            this.txtApellidoM.Location = new System.Drawing.Point(29, 226);
             this.txtApellidoM.Name = "txtApellidoM";
             this.txtApellidoM.Size = new System.Drawing.Size(129, 20);
             this.txtApellidoM.TabIndex = 47;
             // 
             // txtApellidoP
             // 
-            this.txtApellidoP.Location = new System.Drawing.Point(29, 217);
+            this.txtApellidoP.Location = new System.Drawing.Point(29, 168);
             this.txtApellidoP.Name = "txtApellidoP";
             this.txtApellidoP.Size = new System.Drawing.Size(129, 20);
             this.txtApellidoP.TabIndex = 46;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(29, 169);
+            this.txtNombre.Location = new System.Drawing.Point(29, 120);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(129, 20);
             this.txtNombre.TabIndex = 45;
-            // 
-            // txtContraseña
-            // 
-            this.txtContraseña.Location = new System.Drawing.Point(29, 120);
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(129, 20);
-            this.txtContraseña.TabIndex = 44;
             // 
             // txtUsuario
             // 
@@ -187,7 +177,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(26, 309);
+            this.label11.Location = new System.Drawing.Point(26, 260);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(53, 13);
             this.label11.TabIndex = 37;
@@ -196,7 +186,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(26, 259);
+            this.label10.Location = new System.Drawing.Point(26, 210);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(116, 13);
             this.label10.TabIndex = 36;
@@ -205,7 +195,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(26, 201);
+            this.label9.Location = new System.Drawing.Point(26, 152);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(114, 13);
             this.label9.TabIndex = 35;
@@ -214,20 +204,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(26, 153);
+            this.label8.Location = new System.Drawing.Point(26, 104);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(54, 13);
             this.label8.TabIndex = 34;
             this.label8.Text = "NOMBRE";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(26, 104);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 13);
-            this.label7.TabIndex = 33;
-            this.label7.Text = "CONTRASEÑA";
             // 
             // label6
             // 
@@ -316,7 +297,6 @@
             this.Controls.Add(this.txtApellidoM);
             this.Controls.Add(this.txtApellidoP);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.txtDireccion);
@@ -327,7 +307,6 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -354,7 +333,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -365,7 +343,6 @@
         public System.Windows.Forms.TextBox txtApellidoM;
         public System.Windows.Forms.TextBox txtApellidoP;
         public System.Windows.Forms.TextBox txtNombre;
-        public System.Windows.Forms.TextBox txtContraseña;
         public System.Windows.Forms.TextBox txtUsuario;
         public System.Windows.Forms.TextBox txtTelefono;
         public System.Windows.Forms.TextBox txtDireccion;

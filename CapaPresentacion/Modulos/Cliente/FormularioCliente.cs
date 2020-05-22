@@ -34,20 +34,52 @@ namespace CapaPresentacion.Modulos.Cliente
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-
-            ClienteController cc = new ClienteController();
-            int id = int.Parse(dataClientes.CurrentRow.Cells[0].Value.ToString());
-            ModificarCliente mc = new ModificarCliente();
-            cc.LlenarCampos(id, mc.txtUsuario,mc.txtContraseña,mc.txtNombre,mc.txtApellidoP,mc.txtApellidoM,mc.txtCorreo,mc.txtRut,mc.txtNombreE,mc.txtRubro,mc.txtDireccion,mc.txtTelefono, mc.id);
-            mc.Show();
+            try
+            {
+                ClienteController cc = new ClienteController();
+                int id = int.Parse(dataClientes.CurrentRow.Cells[0].Value.ToString());
+                ModificarCliente mc = new ModificarCliente();
+                cc.LlenarCampos(id, mc.txtUsuario, mc.txtNombre, mc.txtApellidoP, mc.txtApellidoM, mc.txtCorreo, mc.txtRut, mc.txtNombreE, mc.txtRubro, mc.txtDireccion, mc.txtTelefono, mc.id);
+                mc.Show();
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Debe seleccionar 1 cliente.", "Modificar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+          
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            ClienteController cc = new ClienteController();
-            int id = int.Parse(dataClientes.CurrentRow.Cells[0].Value.ToString());
-            cc.EliminarCliente(id);
-            cc.LlenarGrid(App.fc.dataClientes);
+            try
+            {
+                ClienteController cc = new ClienteController();
+                int id = int.Parse(dataClientes.CurrentRow.Cells[0].Value.ToString());
+                cc.EliminarCliente(id);
+                cc.LlenarGrid(App.fc.dataClientes);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Debe seleccionar 1 cliente.", "Eliminar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
+        }
+
+        private void btnModificarPass_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ClienteController cc = new ClienteController();
+                int id = int.Parse(dataClientes.CurrentRow.Cells[0].Value.ToString());
+                CambiarPassword cp = new CambiarPassword();
+                cc.CambiarPassId(cp.labelID, id);
+                cp.Show();
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Debe seleccionar 1 cliente.", "Modificar Password", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

@@ -51,9 +51,12 @@ namespace CapaPresentacion.Modulos
                                                       try
                                                             {
                                                              ClienteController cc = new ClienteController();
-                                                             cc.AgregarCliente(txtUsuario.Text, txtContraseña.Text, txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, txtCorreo.Text, txtRut.Text, txtNombreE.Text, txtRubro.Text, txtDireccion.Text, int.Parse(txtTelefono.Text));
-                                                             cc.LlenarGrid(App.fc.dataClientes);
-                                                             this.Dispose();
+                                                             if(cc.AgregarCliente(txtUsuario.Text, txtContraseña.Text, txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, txtCorreo.Text, txtRut.Text, txtNombreE.Text, txtRubro.Text, txtDireccion.Text, int.Parse(txtTelefono.Text)))
+                                                            {
+                                                                cc.LlenarGrid(App.fc.dataClientes);
+                                                                this.Dispose();
+                                                            }
+                                                             
                                                            }
                                                         catch(Exception ex)
                                                         {

@@ -71,6 +71,12 @@
     <Compile Include="Modulos\Cliente\AgregarCliente.Designer.cs">
       <DependentUpon>AgregarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\Cliente\CambiarPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Cliente\CambiarPassword.Designer.cs">
+      <DependentUpon>CambiarPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\Cliente\FormularioCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,11 +101,35 @@
     <Compile Include="Modulos\Empleado\FormularioEmpleado.Designer.cs">
       <DependentUpon>FormularioEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\Empleado\ModificarContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Empleado\ModificarContraseña.Designer.cs">
+      <DependentUpon>ModificarContraseña.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\Empleado\ModificarEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modulos\Empleado\ModificarEmpleado.Designer.cs">
       <DependentUpon>ModificarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Habitacion\AgregarHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Habitacion\AgregarHabitacion.Designer.cs">
+      <DependentUpon>AgregarHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Habitacion\FormularioHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Habitacion\FormularioHabitacion.Designer.cs">
+      <DependentUpon>FormularioHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Habitacion\ModificarHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Habitacion\ModificarHabitacion.Designer.cs">
+      <DependentUpon>ModificarHabitacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulos\Proveedor\AgregarProveedor.cs">
       <SubType>Form</SubType>
@@ -119,6 +149,30 @@
     <Compile Include="Modulos\Proveedor\FormularioProveedor.Designer.cs">
       <DependentUpon>FormularioProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\Proveedor\ModificarContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Proveedor\ModificarContraseña.Designer.cs">
+      <DependentUpon>ModificarContraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Servicio\AgregarServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Servicio\AgregarServicio.Designer.cs">
+      <DependentUpon>AgregarServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Servicio\FormularioServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Servicio\FormularioServicio.Designer.cs">
+      <DependentUpon>FormularioServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Servicio\ModificarServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Servicio\ModificarServicio.Designer.cs">
+      <DependentUpon>ModificarServicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="App.resx">
@@ -129,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\Cliente\AgregarCliente.resx">
       <DependentUpon>AgregarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Cliente\CambiarPassword.resx">
+      <DependentUpon>CambiarPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\Cliente\FormularioCliente.resx">
       <DependentUpon>FormularioCliente.cs</DependentUpon>
@@ -142,8 +199,20 @@
     <EmbeddedResource Include="Modulos\Empleado\FormularioEmpleado.resx">
       <DependentUpon>FormularioEmpleado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Empleado\ModificarContraseña.resx">
+      <DependentUpon>ModificarContraseña.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modulos\Empleado\ModificarEmpleado.resx">
       <DependentUpon>ModificarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Habitacion\AgregarHabitacion.resx">
+      <DependentUpon>AgregarHabitacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Habitacion\FormularioHabitacion.resx">
+      <DependentUpon>FormularioHabitacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Habitacion\ModificarHabitacion.resx">
+      <DependentUpon>ModificarHabitacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\Proveedor\AgregarProveedor.resx">
       <DependentUpon>AgregarProveedor.cs</DependentUpon>
@@ -153,6 +222,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\Proveedor\FormularioProveedor.resx">
       <DependentUpon>FormularioProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Proveedor\ModificarContraseña.resx">
+      <DependentUpon>ModificarContraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Servicio\AgregarServicio.resx">
+      <DependentUpon>AgregarServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Servicio\FormularioServicio.resx">
+      <DependentUpon>FormularioServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Servicio\ModificarServicio.resx">
+      <DependentUpon>ModificarServicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -224,9 +305,7 @@
     <None Include="Resources\seguridad.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Modulos\Comedor\" />
     <Folder Include="Modulos\Facturas\" />
-    <Folder Include="Modulos\Habitacion\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

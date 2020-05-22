@@ -34,6 +34,7 @@
             this.btnAgregarEmp = new System.Windows.Forms.Button();
             this.labelEmpleados = new System.Windows.Forms.Label();
             this.linkEmpleado = new System.Windows.Forms.LinkLabel();
+            this.btnModificarPass = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataEmpleado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,6 +61,7 @@
             this.btnEliminarEmp.TabIndex = 6;
             this.btnEliminarEmp.Text = "Eliminar Empleado";
             this.btnEliminarEmp.UseVisualStyleBackColor = true;
+            this.btnEliminarEmp.Click += new System.EventHandler(this.btnEliminarEmp_Click);
             // 
             // btnModificarEmp
             // 
@@ -112,12 +114,27 @@
             this.linkEmpleado.TabStop = true;
             this.linkEmpleado.Text = "¿Necesita ayuda?";
             // 
+            // btnModificarPass
+            // 
+            this.btnModificarPass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnModificarPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarPass.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarPass.ForeColor = System.Drawing.Color.White;
+            this.btnModificarPass.Location = new System.Drawing.Point(306, 411);
+            this.btnModificarPass.Name = "btnModificarPass";
+            this.btnModificarPass.Size = new System.Drawing.Size(92, 48);
+            this.btnModificarPass.TabIndex = 11;
+            this.btnModificarPass.Text = "Modificar Contraseña";
+            this.btnModificarPass.UseVisualStyleBackColor = true;
+            this.btnModificarPass.Click += new System.EventHandler(this.btnModificarPass_Click);
+            // 
             // FormularioEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(856, 506);
+            this.Controls.Add(this.btnModificarPass);
             this.Controls.Add(this.linkEmpleado);
             this.Controls.Add(this.labelEmpleados);
             this.Controls.Add(this.btnEliminarEmp);
@@ -136,11 +153,12 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataEmpleado;
+        public System.Windows.Forms.DataGridView dataEmpleado;
         private System.Windows.Forms.Button btnEliminarEmp;
         private System.Windows.Forms.Button btnModificarEmp;
         private System.Windows.Forms.Button btnAgregarEmp;
         private System.Windows.Forms.Label labelEmpleados;
         private System.Windows.Forms.LinkLabel linkEmpleado;
+        private System.Windows.Forms.Button btnModificarPass;
     }
 }

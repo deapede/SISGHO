@@ -74,6 +74,11 @@
     </Compile>
     <Compile Include="ServiceCliente.cs" />
     <Compile Include="ServiceEmpleado.cs" />
+    <Compile Include="ServiceHabitacion.cs" />
+    <Compile Include="ServiceEstadoHabitacion.cs" />
+    <Compile Include="ServiceProveedor.cs" />
+    <Compile Include="ServiceServicioComedor.cs" />
+    <Compile Include="ServiceTipoServicio.cs" />
     <Compile Include="ServiceTipoUsuario.cs" />
     <Compile Include="ServiceUsuario.cs" />
     <Compile Include="SERVICIOCOMEDOR.cs">

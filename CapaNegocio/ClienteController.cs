@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -10,7 +11,7 @@ namespace CapaNegocio
 {
     public class ClienteController
     {
-        // Se agregan los servicios de la base de datos.
+        
         
         
         public List<CLIENTE> ListadoCliente()
@@ -76,10 +77,11 @@ namespace CapaNegocio
 
         }
 
-        public void AgregarCliente(string usuario, string contraseña, string nombre, string apellidop, string apellidom, string correo, string rut, string nombreE, string rubro, string direccion, int telefono)
+        public bool AgregarCliente(string usuario, string contraseña, string nombre, string apellidop, string apellidom, string correo, string rut, string nombreE, string rubro, string direccion, int telefono)
         {
             ServiceCliente sc = new ServiceCliente();
             ServiceUsuario su = new ServiceUsuario();
+            PasswordController ps = new PasswordController();
             if (!this.BuscarUsuario(usuario))
             {
                 // Creamos usuario
@@ -87,7 +89,7 @@ namespace CapaNegocio
                 user.IDUSUARIO = su.id();
                 user.TIPOUSUARIO = 3;
                 user.USUARIO1 = usuario;
-                user.CONTRASEÑA = contraseña;
+                user.CONTRASEÑA = ps.generarContraseña(contraseña);
                 user.NOMBRE = nombre;
                 user.APELLIDO_PATERNO = apellidop;
                 user.APELLIDO_MATERNO = apellidom;
@@ -104,11 +106,13 @@ namespace CapaNegocio
                 cliente.TELEFONO = telefono;
                 cliente.USUARIO = su.getEntity(usuario).IDUSUARIO;
                 sc.addEntity(cliente);
-                MessageBox.Show("Cliente Creado.", "Crear Cliente", MessageBoxButtons.OK);
+                MessageBox.Show("Cliente Creado.", "Crear Cliente", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return true;
             }
             else
             {
-                MessageBox.Show("El usuario ya existe.", "Crear Cliente", MessageBoxButtons.OK);
+                MessageBox.Show("El usuario ya existe.", "Crear Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
             }
 
         }
@@ -127,37 +131,83 @@ namespace CapaNegocio
                 return true;
             }
         }
-        public void ModificarCliente(string usuario, string contraseña, string nombre, string apellidop, string apellidom, string correo, string rut, string nombreE, string rubro, string direccion, int telefono, int id)
+        public bool ModificarCliente(string usuario, string nombre, string apellidop, string apellidom, string correo, string rut, string nombreE, string rubro, string direccion, int telefono, int id)
         {
-            ServiceUsuario su = new ServiceUsuario();
-            ServiceCliente sc = new ServiceCliente();
-            // Creamos usuario
-            USUARIO user = new USUARIO();
-            user.USUARIO1 = usuario;
-            user.CONTRASEÑA = contraseña;
-            user.NOMBRE = nombre;
-            user.APELLIDO_PATERNO = apellidop;
-            user.APELLIDO_MATERNO = apellidom;
-            user.CORREO = correo;
-            su.updEntity(user);
+            try
+            {
+                ServiceUsuario su = new ServiceUsuario();
+                ServiceCliente sc = new ServiceCliente();
+                // Creamos usuario
+                USUARIO user = new USUARIO();
+                user.USUARIO1 = usuario;
+                user.NOMBRE = nombre;
+                user.APELLIDO_PATERNO = apellidop;
+                user.APELLIDO_MATERNO = apellidom;
+                user.CORREO = correo;
 
-            //Agregamos Cliente
-            CLIENTE cliente = new CLIENTE();
-            cliente.IDCLIENTE = id;
-            cliente.RUT = rut;
-            cliente.NOMBRE = nombreE;
-            cliente.RUBRO = rubro;
-            cliente.DIRECCION = direccion;
-            cliente.TELEFONO = telefono;
-            sc.updEntity(cliente);
-            MessageBox.Show("Cliente Modificado.", "Modificar Cliente", MessageBoxButtons.OK);
+
+                su.updEntity(user);
+
+                //Agregamos Cliente
+                CLIENTE cliente = new CLIENTE();
+                cliente.IDCLIENTE = id;
+                cliente.RUT = rut;
+                cliente.NOMBRE = nombreE;
+                cliente.RUBRO = rubro;
+                cliente.DIRECCION = direccion;
+                cliente.TELEFONO = telefono;
+                sc.updEntity(cliente);
+                MessageBox.Show("Cliente Modificado.", "Modificar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return true;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("No se pudo modificar el cliente.", "Modificar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            
             
             
           
 
         }
 
-        public void LlenarCampos(int idCliente, TextBox usuario, TextBox contrasena, TextBox nombre, TextBox apellidop, TextBox apellidom, TextBox correo, TextBox rut, TextBox nombreE, TextBox rubro, TextBox direccion, TextBox telefono, TextBox id)
+        public void CambiarPassId(Label id, int iduser)
+        {
+            id.Text = iduser.ToString();
+        }
+
+        public bool ModificarPassword(int id, string password)
+        {
+            try
+           {
+                ServiceUsuario su = new ServiceUsuario();
+                ServiceCliente sc = new ServiceCliente();
+                CLIENTE cli = sc.getEntity(id);
+                PasswordController pc = new PasswordController();
+
+                USUARIO user = new USUARIO();
+                user.IDUSUARIO = cli.USUARIO1.IDUSUARIO;
+                user.CONTRASEÑA = pc.generarContraseña(password);
+                su.updPass(user);
+
+                MessageBox.Show("Contraseña Modificada.", "Modificar Contrasña", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return true;
+            } catch(Exception ex)
+            {
+                MessageBox.Show("Error: "+ex.Message, "Modificar Contrasña", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+           }
+            
+
+
+
+        }
+
+
+
+
+        public void LlenarCampos(int idCliente, TextBox usuario, TextBox nombre, TextBox apellidop, TextBox apellidom, TextBox correo, TextBox rut, TextBox nombreE, TextBox rubro, TextBox direccion, TextBox telefono, TextBox id)
         {
             ServiceUsuario su = new ServiceUsuario();
             ServiceCliente sc = new ServiceCliente();
@@ -166,7 +216,6 @@ namespace CapaNegocio
             
             USUARIO user = su.getEntity(cliente.USUARIO1.USUARIO1);
             usuario.Text = user.USUARIO1;
-            contrasena.Text = user.CONTRASEÑA;
             nombre.Text = user.NOMBRE;
             apellidop.Text = user.APELLIDO_PATERNO;
             apellidom.Text = user.APELLIDO_MATERNO;
@@ -186,15 +235,19 @@ namespace CapaNegocio
 
             CLIENTE cli = sc.getEntity(id);
             USUARIO user = su.getEntity(cli.USUARIO1.USUARIO1);
-            sc.delEntity(cli.IDCLIENTE);
-            su.delEntity(user.USUARIO1);
             
-            MessageBox.Show("Cliente Eliminado.", "Eliminar Cliente", MessageBoxButtons.OK);
+            if (MessageBox.Show("Esta seguro de que desea eliminar el cliente: "+user.USUARIO1+"?", "Eliminar Cliente", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                sc.delEntity(cli.IDCLIENTE);
+                su.delEntity(user.USUARIO1);
+                MessageBox.Show("Cliente Eliminado", "Eliminar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+            
         }
 
 
 
 
 
-        }
+    }
 }

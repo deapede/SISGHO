@@ -13,7 +13,7 @@ namespace CapaPresentacion.Modulos.Cliente
 {
     public partial class ModificarCliente : Form
     {
-        ClienteController cc = new ClienteController();
+        
         public ModificarCliente()
         {
             InitializeComponent();
@@ -23,8 +23,8 @@ namespace CapaPresentacion.Modulos.Cliente
         {
             if (!String.IsNullOrEmpty(txtUsuario.Text))
             {
-                if (!String.IsNullOrEmpty(txtContraseña.Text))
-                {
+                
+                
                     if (!String.IsNullOrEmpty(txtNombre.Text))
                     {
                         if (!String.IsNullOrEmpty(txtApellidoP.Text))
@@ -45,11 +45,15 @@ namespace CapaPresentacion.Modulos.Cliente
                                                     {
                                                         try
                                                         {
-                                                            
-                                                            cc.ModificarCliente(txtUsuario.Text, txtContraseña.Text, txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, txtCorreo.Text, txtRut.Text, txtNombreE.Text, txtRubro.Text, txtDireccion.Text, int.Parse(txtTelefono.Text),int.Parse(id.Text));
-                                                            
+                                                        ClienteController cc = new ClienteController();
+                                                        if (cc.ModificarCliente(txtUsuario.Text, txtNombre.Text, txtApellidoP.Text, txtApellidoM.Text, txtCorreo.Text, txtRut.Text, txtNombreE.Text, txtRubro.Text, txtDireccion.Text, int.Parse(txtTelefono.Text), int.Parse(id.Text)))
+                                                        {
                                                             cc.LlenarGrid(App.fc.dataClientes);
                                                             this.Dispose();
+                                                        }
+                                                        
+                                                            
+                                                            
                                                         }
                                                         catch (Exception ex)
                                                         {
@@ -100,11 +104,8 @@ namespace CapaPresentacion.Modulos.Cliente
                     {
                         MessageBox.Show("Ingrese Nombre.", "Crear Usuario", MessageBoxButtons.OK);
                     }
-                }
-                else
-                {
-                    MessageBox.Show("Ingrese Contrasena.", "Crear Usuario", MessageBoxButtons.OK);
-                }
+                
+               
 
             }
             else

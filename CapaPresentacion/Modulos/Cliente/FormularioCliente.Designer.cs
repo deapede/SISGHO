@@ -34,6 +34,7 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.labelClientes = new System.Windows.Forms.Label();
             this.linkCliente = new System.Windows.Forms.LinkLabel();
+            this.btnModificarPass = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,12 +114,27 @@
             this.linkCliente.TabStop = true;
             this.linkCliente.Text = "¿Necesita ayuda?";
             // 
+            // btnModificarPass
+            // 
+            this.btnModificarPass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnModificarPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarPass.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarPass.ForeColor = System.Drawing.Color.White;
+            this.btnModificarPass.Location = new System.Drawing.Point(306, 411);
+            this.btnModificarPass.Name = "btnModificarPass";
+            this.btnModificarPass.Size = new System.Drawing.Size(92, 48);
+            this.btnModificarPass.TabIndex = 10;
+            this.btnModificarPass.Text = "Modificar Contraseña";
+            this.btnModificarPass.UseVisualStyleBackColor = true;
+            this.btnModificarPass.Click += new System.EventHandler(this.btnModificarPass_Click);
+            // 
             // FormularioCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(856, 506);
+            this.Controls.Add(this.btnModificarPass);
             this.Controls.Add(this.linkCliente);
             this.Controls.Add(this.labelClientes);
             this.Controls.Add(this.btnEliminar);
@@ -142,5 +158,6 @@
         public System.Windows.Forms.DataGridView dataClientes;
         private System.Windows.Forms.Label labelClientes;
         private System.Windows.Forms.LinkLabel linkCliente;
+        private System.Windows.Forms.Button btnModificarPass;
     }
 }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnInformes = new System.Windows.Forms.Button();
             this.btnProveedor = new System.Windows.Forms.Button();
             this.btnComedor = new System.Windows.Forms.Button();
             this.btnHabitaciones = new System.Windows.Forms.Button();
@@ -58,7 +57,6 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(31)))), ((int)(((byte)(96)))));
-            this.panelMenu.Controls.Add(this.btnInformes);
             this.panelMenu.Controls.Add(this.btnProveedor);
             this.panelMenu.Controls.Add(this.btnComedor);
             this.panelMenu.Controls.Add(this.btnHabitaciones);
@@ -70,22 +68,6 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(224, 592);
             this.panelMenu.TabIndex = 0;
-            // 
-            // btnInformes
-            // 
-            this.btnInformes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInformes.FlatAppearance.BorderSize = 0;
-            this.btnInformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInformes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInformes.ForeColor = System.Drawing.Color.White;
-            this.btnInformes.Image = global::CapaPresentacion.Properties.Resources.estadisticas_1_;
-            this.btnInformes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInformes.Location = new System.Drawing.Point(0, 380);
-            this.btnInformes.Name = "btnInformes";
-            this.btnInformes.Size = new System.Drawing.Size(224, 50);
-            this.btnInformes.TabIndex = 6;
-            this.btnInformes.Text = "Informes";
-            this.btnInformes.UseVisualStyleBackColor = true;
             // 
             // btnProveedor
             // 
@@ -119,6 +101,7 @@
             this.btnComedor.TabIndex = 4;
             this.btnComedor.Text = "Comedor";
             this.btnComedor.UseVisualStyleBackColor = true;
+            this.btnComedor.Click += new System.EventHandler(this.btnComedor_Click);
             // 
             // btnHabitaciones
             // 
@@ -135,6 +118,7 @@
             this.btnHabitaciones.TabIndex = 3;
             this.btnHabitaciones.Text = "Habitaciones";
             this.btnHabitaciones.UseVisualStyleBackColor = true;
+            this.btnHabitaciones.Click += new System.EventHandler(this.btnHabitaciones_Click);
             // 
             // btnEmpleado
             // 
@@ -329,7 +313,6 @@
         private System.Windows.Forms.Button btnHabitaciones;
         private System.Windows.Forms.Button btnEmpleado;
         private System.Windows.Forms.PictureBox logoApp;
-        private System.Windows.Forms.Button btnInformes;
         private System.Windows.Forms.Button btnProveedor;
         private System.Windows.Forms.Panel panelFormularios;
         private System.Windows.Forms.PictureBox btnMaxApp;

@@ -17,6 +17,8 @@ namespace CapaPresentacion
         public static Modulos.Cliente.FormularioCliente fc = new Modulos.Cliente.FormularioCliente();
         public static Modulos.Empleado.FormularioEmpleado fe = new Modulos.Empleado.FormularioEmpleado();
         public static Modulos.Proveedor.FormularioProveedor fp = new Modulos.Proveedor.FormularioProveedor();
+        public static Modulos.Habitacion.FormularioHabitacion fh = new Modulos.Habitacion.FormularioHabitacion();
+        public static Modulos.Servicio.FormularioServicio fs = new Modulos.Servicio.FormularioServicio();
         public App()
         {
             InitializeComponent();
@@ -82,6 +84,16 @@ namespace CapaPresentacion
         private void btnProveedor_Click(object sender, EventArgs e)
         {
             ac.AbrirFormulario(fp, panelFormularios);
+        }
+
+        private void btnHabitaciones_Click(object sender, EventArgs e)
+        {
+            ac.AbrirFormulario(fh, panelFormularios);
+        }
+
+        private void btnComedor_Click(object sender, EventArgs e)
+        {
+            ac.AbrirFormulario(fs, panelFormularios);
         }
     }//Fin clase
 }//FIn namespace

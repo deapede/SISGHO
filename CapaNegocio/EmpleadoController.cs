@@ -25,8 +25,6 @@ namespace CapaNegocio
             //columna empleado
             DataGridViewTextBoxColumn columna1 = new DataGridViewTextBoxColumn();
             columna1.HeaderText = "id";
-            DataGridViewTextBoxColumn columna2 = new DataGridViewTextBoxColumn();
-            columna2.HeaderText = "usuario";
 
             //columna usuario empleado
             DataGridViewTextBoxColumn columna3 = new DataGridViewTextBoxColumn();
@@ -42,7 +40,6 @@ namespace CapaNegocio
 
 
             dge.Columns.Add(columna1);
-            dge.Columns.Add(columna2);
             dge.Columns.Add(columna3);
             dge.Columns.Add(columna4);
             dge.Columns.Add(columna5);
@@ -53,7 +50,7 @@ namespace CapaNegocio
             foreach (EMPLEADO empleado in ListadoEmpleado())
             {
 
-                dge.Rows.Add(empleado.IDEMPLEADO, empleado.USUARIO,empleado.USUARIO1.USUARIO1,empleado.USUARIO1.NOMBRE,empleado.USUARIO1.APELLIDO_PATERNO,empleado.USUARIO1.APELLIDO_MATERNO,empleado.USUARIO1.CORREO);
+                dge.Rows.Add(empleado.IDEMPLEADO,empleado.USUARIO1.USUARIO1,empleado.USUARIO1.NOMBRE,empleado.USUARIO1.APELLIDO_PATERNO,empleado.USUARIO1.APELLIDO_MATERNO,empleado.USUARIO1.CORREO);
             }
 
             dge.ReadOnly = true;
@@ -61,17 +58,18 @@ namespace CapaNegocio
 
 
 
-        public void AgregarEmpleado(string usuario, string nombre, string apellidop, string apellidom, string correo, string contraseña)
+        public bool AgregarEmpleado(string usuario, string nombre, string apellidop, string apellidom, string correo, string contraseña)
         {
             ServiceEmpleado sc = new ServiceEmpleado();
             ServiceUsuario su = new ServiceUsuario();
+            PasswordController pc = new PasswordController();
             if (!this.BuscarUsuario(usuario))
             {
                 USUARIO user = new USUARIO();
                 user.IDUSUARIO = su.id();
                 user.TIPOUSUARIO = 2;
                 user.USUARIO1 = usuario;
-                user.CONTRASEÑA = contraseña;
+                user.CONTRASEÑA = pc.generarContraseña(contraseña);
                 user.NOMBRE = nombre;
                 user.NOMBRE = nombre;
                 user.APELLIDO_PATERNO = apellidop;
@@ -80,14 +78,16 @@ namespace CapaNegocio
                 su.addEntity(user);
 
                 EMPLEADO empleado = new EMPLEADO();
-                empleado.IDEMPLEADO = su.id();
+                empleado.IDEMPLEADO = sc.id();
                 empleado.USUARIO= su.getEntity(usuario).IDUSUARIO;
                 sc.addEntity(empleado);
-                MessageBox.Show("Empleado Creado.", "Crear Empleado", MessageBoxButtons.OK);
+                MessageBox.Show("Empleado Creado.", "Crear Empleado", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return true;
             }
             else
             {
-                MessageBox.Show("El empleado ya existe.", "Crear Empleado", MessageBoxButtons.OK);
+                MessageBox.Show("El empleado ya existe.", "Crear Empleado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
             }
 
         }
@@ -106,6 +106,102 @@ namespace CapaNegocio
                 return true;
             }
         }
+
+        public bool ModificarEmpleado(string usuario, string nombre, string apellidop, string apellidom, string correo)
+        {
+            try
+            {
+                ServiceEmpleado se = new ServiceEmpleado();
+                ServiceUsuario su = new ServiceUsuario();
+                //Crear usuario
+                USUARIO user = new USUARIO();
+                user.USUARIO1 = usuario;
+                user.NOMBRE = nombre;
+                user.APELLIDO_PATERNO = apellidop;
+                user.APELLIDO_MATERNO = apellidom;
+                user.CORREO = correo;
+                su.updEntity(user);
+
+
+                MessageBox.Show("Empleado Modificado", "Modificar Empleado", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return true;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Modificar Empleado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+           
+        }
+
+        public void LlenarCamposEmp(int idEmpleado, TextBox usuario, TextBox nombre, TextBox apellidop, TextBox apellidom, TextBox correo)
+        {
+            ServiceEmpleado se = new ServiceEmpleado();
+            ServiceUsuario su = new ServiceUsuario();
+
+            EMPLEADO empleado = se.getEntity(idEmpleado);
+            USUARIO user = su.getEntity(empleado.USUARIO1.USUARIO1);
+
+            usuario.Text = user.USUARIO1.ToString();
+            nombre.Text = user.NOMBRE;
+            apellidop.Text = user.APELLIDO_PATERNO;
+            apellidom.Text = user.APELLIDO_MATERNO;
+            correo.Text = user.CORREO;
+        }
+
+        public void EliminarEmpleado(int id)
+        {
+            ServiceUsuario su = new ServiceUsuario();
+            ServiceEmpleado se = new ServiceEmpleado();
+
+            EMPLEADO emp = se.getEntity(id);
+            USUARIO user = su.getEntity(emp.USUARIO1.USUARIO1);
+           
+            
+
+            if (MessageBox.Show("Esta seguro de que desea eliminar el empleado: " + user.USUARIO1 + "?", "Eliminar Empleado", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                se.delEntity(emp.IDEMPLEADO);
+                su.delEntity(user.USUARIO1);
+                MessageBox.Show("Empleado Eliminado", "Eliminar Empleado", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+
+        }
+
+        public void CambiarPassId(Label id, int iduser)
+        {
+            id.Text = iduser.ToString();
+        }
+
+        public bool ModificarPassword(int id, string password)
+        {
+            try
+            {
+                ServiceUsuario su = new ServiceUsuario();
+                ServiceEmpleado se = new ServiceEmpleado();
+                EMPLEADO emp = se.getEntity(id);
+                PasswordController pc = new PasswordController();
+
+                USUARIO user = new USUARIO();
+                user.IDUSUARIO = emp.USUARIO1.IDUSUARIO;
+                user.CONTRASEÑA = pc.generarContraseña(password);
+                su.updPass(user);
+
+                MessageBox.Show("Contraseña Modificada.", "Modificar Contrasña", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Modificar Contrasña", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+
+
+
+        }
+
+
 
 
     }

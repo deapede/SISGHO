@@ -78,3 +78,90 @@ C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.M
 C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Empleado.AgregarEmpleado.resources
 C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Empleado.ModificarEmpleado.resources
 C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Proveedor.FormularioProveedor.resources
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\bin\Debug\CapaNegocio.dll
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\bin\Debug\CapaDatos.dll
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\bin\Debug\EntityFramework.dll
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\bin\Debug\CapaNegocio.dll.config
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\bin\Debug\CapaDatos.pdb
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\bin\Debug\CapaDatos.dll.config
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\bin\Debug\EntityFramework.xml
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.App.resources
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.formLogin.resources
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.AgregarCliente.resources
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Cliente.FormularioCliente.resources
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Cliente.ModificarCliente.resources
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Empleado.AgregarEmpleado.resources
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Empleado.FormularioEmpleado.resources
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Empleado.ModificarEmpleado.resources
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Proveedor.AgregarProveedor.resources
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Proveedor.EditarProveedor.resources
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Proveedor.FormularioProveedor.resources
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Habitacion.FormularioHabitacion.resources
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Habitacion.AgregarHabitacion.resources
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Habitacion.ModificarHabitacion.resources
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Servicio.AgregarServicio.resources
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Servicio.FormularioServicio.resources
+E:\Portafolio\I.T 1\app final\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Servicio.ModificarServicio.resources
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Habitacion.AgregarHabitacion.resources
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Habitacion.FormularioHabitacion.resources
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Habitacion.ModificarHabitacion.resources
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Proveedor.AgregarProveedor.resources
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Proveedor.EditarProveedor.resources
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Servicio.AgregarServicio.resources
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Servicio.FormularioServicio.resources
+C:\Users\pinto\source\repos\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Servicio.ModificarServicio.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\bin\Debug\EntityFramework.dll
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\bin\Debug\CapaNegocio.dll.config
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\bin\Debug\CapaDatos.dll.config
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\bin\Debug\EntityFramework.xml
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.App.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.formLogin.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.AgregarCliente.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Cliente.FormularioCliente.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Cliente.ModificarCliente.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Empleado.AgregarEmpleado.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Empleado.FormularioEmpleado.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Empleado.ModificarEmpleado.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Habitacion.AgregarHabitacion.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Habitacion.FormularioHabitacion.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Habitacion.ModificarHabitacion.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Proveedor.AgregarProveedor.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Proveedor.EditarProveedor.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Proveedor.FormularioProveedor.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Servicio.AgregarServicio.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Servicio.FormularioServicio.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Servicio.ModificarServicio.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\bin\Debug\PBKDF2.NET.dll
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\bin\Debug\PBKDF2.NET.xml
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Cliente.CambiarPassword.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Empleado.ModificarContraseña.resources
+C:\Users\Programar\Downloads\SISGHO\SISGHO\CapaPresentacion\obj\Debug\CapaPresentacion.Modulos.Proveedor.ModificarContraseña.resources

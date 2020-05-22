@@ -41,6 +41,12 @@ namespace CapaDatos
             return usuario;
         }
 
+        public USUARIO obtenerUsuarioID(int id)
+        {
+            USUARIO usuario = em.USUARIO.Where(q => q.IDUSUARIO == id).FirstOrDefault<USUARIO>();
+            return usuario;
+        }
+
         public override void updEntity(USUARIO entity)
         {
             USUARIO usuario = getEntity(entity.USUARIO1);
@@ -50,11 +56,24 @@ namespace CapaDatos
             }
             else
             {
-                usuario.CONTRASEÑA = entity.CONTRASEÑA;
                 usuario.NOMBRE = entity.NOMBRE;
                 usuario.APELLIDO_PATERNO = entity.APELLIDO_PATERNO;
                 usuario.APELLIDO_MATERNO = entity.APELLIDO_MATERNO;
                 usuario.CORREO = entity.CORREO;
+                em.SaveChanges();
+            }
+        }
+
+        public void updPass(USUARIO entity)
+        {
+            USUARIO usuario = obtenerUsuarioID((int)entity.IDUSUARIO);
+            if (usuario == null)
+            {
+                throw new ArgumentException("Usuario no encontrado");
+            }
+            else
+            {
+                usuario.CONTRASEÑA = entity.CONTRASEÑA;
                 em.SaveChanges();
             }
         }
